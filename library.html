@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='./css/library.css' rel='stylesheet'>
+    <link rel='icon' href='./images/favicon.png' type='image/x-icon'>
+    <title>My Library</title>
+</head>
+
+<body>
+    <div class='header'>
+        <a href='./library.html'><img class='logo' alt='logo' src='./images/Book Pile.png'></a>
+        <h1>My Library</h1>
+        <button onclick='showModal();'>+</button>
+    </div>
+    <div id='main'>
+
+    </div>
+    <div id='modal'>
+        <div class='modal-content'>
+            <h2>Add new book</h2>
+            <div>
+                <label>Title</label>
+                <input type='text' id='title' required>
+            </div>
+            <div>
+                <label>Author</label>
+                <input type='text' id='author' required>
+            </div>
+            <div>
+                <label>Pages</label>
+                <input type='text' id='pages' required>
+            </div>
+            <div>
+                <label>Have you read the book?</label>
+                <input type='checkbox' id='read'>
+            </div>
+            <button onclick='addBook();'>Add book</button>
+        </div>
+    </div>
+    <div id='details'>
+        <div id='details-content' class='details-content'>
+
+        </div>
+    </div>
+    <script src='./js/library.js'></script>
+</body>
+
+</html>
